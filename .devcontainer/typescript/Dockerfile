@@ -7,7 +7,8 @@ RUN useradd -ms /bin/bash user
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
         ca-certificates \
-        curl && \
+        curl \
+        git && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
